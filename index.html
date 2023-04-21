@@ -1,0 +1,287 @@
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<style type="text/css">
+    body {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1100px;
+    }
+
+    h1 {
+        font-size: 32px;
+        font-weight: 300;
+    }
+
+
+    video.header-vid {
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+    }
+
+    img.header-img {
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+    }
+
+    img.rounded {
+        border: 1px solid #eeeeee;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+    }
+
+    a:link, a:visited {
+        color: #1367a7;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #208799;
+    }
+
+    td.dl-link {
+        height: 160px;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+        box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.35), /* The top layer shadow */ 5px 5px 0 0px #fff, /* The second layer */ 5px 5px 1px 1px rgba(0, 0, 0, 0.35), /* The second layer shadow */ 10px 10px 0 0px #fff, /* The third layer */ 10px 10px 1px 1px rgba(0, 0, 0, 0.35), /* The third layer shadow */ 15px 15px 0 0px #fff, /* The fourth layer */ 15px 15px 1px 1px rgba(0, 0, 0, 0.35), /* The fourth layer shadow */ 20px 20px 0 0px #fff, /* The fifth layer */ 20px 20px 1px 1px rgba(0, 0, 0, 0.35), /* The fifth layer shadow */ 25px 25px 0 0px #fff, /* The fifth layer */ 25px 25px 1px 1px rgba(0, 0, 0, 0.35); /* The fifth layer shadow */
+        margin-left: 10px;
+        margin-right: 45px;
+    }
+
+    hr {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+
+
+    .site-header {
+        border-bottom: 1px solid #ccc;
+        padding: .5em 1em;
+        background-color: #208799;
+    }
+
+    .site-header::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+    .logo-container {
+        margin: 10px 10px 10px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+</style>
+
+<html>
+<head>
+    <header class="site-header">
+        <div class="logo-container">
+            <a href="https://www.fau.eu/" style="margin: 0 100px 0 0">
+                <img src="resources/FAU_TechFak_EN_Q_RGB_blue.png" alt="Logo 1" width="400">
+            </a>
+            <a href="https://www.iis.fraunhofer.de/en.html">
+                <img src="resources/fraunhofer_iis.svg" alt="Logo 2" width="200">
+            </a>
+        </div>
+    </header>
+
+
+    <title>For5G - Digital Twin</title>
+    <link rel="icon" type="image/x-icon" href="https://github.com/meyerls/For5G/raw/master/resources/img.png">
+    <meta property="og:image" content="https://github.com/meyerls/For5G/raw/master/resources/img.png"/>
+    <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
+    <meta property="og:title"
+          content="CherryPicker: Semantic Skeletonization and Topological Reconstruction of Cherry Trees"/>
+    <meta property="og:description"
+          content="CherryPicker: Semantic Skeletonization and Topological Reconstruction of Cherry Trees"/>
+
+    <!-- Get from Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src=""></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-75863369-6');
+    </script>
+</head>
+
+<body>
+<br>
+<center>
+    <span style="font-size:36px">CherryPicker: Semantic Skeletonization and Topological Reconstruction of Cherry Trees</span>
+    <table align=center width=600px>
+        <table align=center width=600px>
+            <tr>
+                <td align=center width=100px>
+                    <center>
+                        <span style="font-size:18px"><a href="https://meyerls.github.io/">Lukas Meyer</a></span>
+                    </center>
+                </td>
+                <td align=center width=100px>
+                    <center>
+                        <span style="font-size:18px"><a href="https://scholar.google.de/citations?user=h84gW6QAAAAJ&hl=de">Andreas Gilson</a></span>
+                    </center>
+                </td>
+                <td align=center width=100px>
+                    <center>
+                        <span style="font-size:18px"><a
+                                href="https://scholar.google.de/citations?user=8H0LEXMAAAAJ&hl=de">Oliver Scholz</a></span>
+                    </center>
+                </td>
+                <td align=center width=100px>
+                    <center>
+                        <span style="font-size:18px"><a
+                                href="https://scholar.google.de/citations?user=cx4AaqoAAAAJ&hl=de"> Marc Stamminger</a></span>
+                    </center>
+                </td>
+            </tr>
+        </table>
+        <table align=center width=250px>
+            <tr>
+                <td align=center width=120px>
+                    <center>
+                        <span style="font-size:24px"><a
+                                href="https://arxiv.org/abs/2304.04708">[Paper]</a></span>
+                    </center>
+                </td>
+                <td align=center width=120px>
+                    <center>
+                        <span style="font-size:24px"><a
+                                href="google.com">[Poster]</a></span>
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </table>
+</center>
+<center>
+    <table align=center width=850px>
+        <tr>
+            <td width=260px>
+                <center>
+                    <img class="round" style="width:800px"
+                         src="resources/cherry_picker_pipeline.png"/>
+                </center>
+            </td>
+        </tr>
+    </table>
+</center>
+
+<hr>
+<br>
+
+<table align=center width=800px>
+    <center><h1>Abstract</h1></center>
+    <tr>
+        <td  style="text-align: justify">
+            In plant phenotyping, accurate trait extraction from 3D point clouds of trees is still an open problem. For
+            automatic modeling and trait extraction of tree organs such as blossoms and fruits, the semantically
+            segmented point cloud of a tree and the tree skeleton are necessary.
+            Therefore, we present CherryPicker, an automatic pipeline that reconstructs photo-metric point clouds of
+            trees, performs semantic segmentation and extracts their topological structure in form of a skeleton. Our
+            system combines several state-of-the-art algorithms to enable automatic processing for further usage in
+            3D-plant phenotyping applications.
+            Within this pipeline, we present a method to automatically estimate the scale factor of a monocular
+            reconstruction to overcome scale ambiguity and obtain metrically correct point clouds.
+            Furthermore, we propose a semantic skeletonization algorithm build up on Laplacian-based contraction. We
+            also show by weighting different tree organs semantically, our approach can effectively remove artifacts
+            induced by occlusion and structural size variations.
+            CherryPicker obtains high-quality topology reconstructions of cherry trees with precise details.
+        </td>
+    </tr>
+</table>
+<hr>
+<table align=center width=800px>
+    <center><h1>Semantic Laplacian-Based Contraction</h1></center>
+    <tr>
+        <td  style="text-align: justify">
+            <div><img src="resources/skeletons.png" width="100%"></div>
+
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<hr>
+<center><h1>Poster</h1></center>
+<p align="center">
+    <a href="www.google.de">
+        <img class="round" style="width:800px"
+             src="resources/poster.png"/>
+    </a>
+</p>
+<hr>
+
+<br>
+<table align=center width=700px>
+    <center><h1>Paper and Supplementary Material</h1></center>
+    <tr>
+        <td><a href=""><img class="layered-paper-big" style="height:175px"
+                            src="https://github.com/meyerls/For5G/raw/master/resources/paper.png"/></a></td>
+        <td><span style="font-size:14pt">Lukas Meyer and Andreas Gilson and Oliver Scholz and Marc Stamminger<br>
+				<b>CherryPicker: Semantic Skeletonization and Topological Reconstruction of Cherry Trees</b><br>
+				arXiv<br>
+				(hosted on <a href="https://arxiv.org/abs/2304.04708">ArXiv</a>)<br>
+            <!-- (<a href="./resources/camera-ready.pdf">camera ready</a>)<br> -->
+				<span style="font-size:4pt"><a href=""><br></a>
+				</span>
+        </td>
+    </tr>
+</table>
+<br>
+
+<table align=center width=600px>
+    <tr>
+        <td><span style="font-size:14pt"><center>
+				<a href="https://github.com/meyerls/For5G/raw/master/resources/bibtex.txt">[Bibtex]</a>
+			</center></td>
+    </tr>
+</table>
+
+<hr>
+<br>
+
+<table align=center width=900px>
+    <tr>
+        <td width=400px>
+            <left>
+                This template was originally made by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a
+                    href="http://richzhang.github.io/">Richard Zhang</a> for a <a
+                    href="http://richzhang.github.io/colorization/">colorful</a> ECCV project; the code can be found <a
+                    href="https://github.com/richzhang/webpage-template">here</a>.
+            </left>
+        </td>
+    </tr>
+</table>
+
+
+<br>
+</body>
+</html>
+
