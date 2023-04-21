@@ -1,13 +1,7 @@
-resources/for5g.jpg filter=lfs diff=lfs merge=lfs -text
-resources/GIL-Final_Paper_After_Review.pdf filter=lfs diff=lfs merge=lfs -text
 resources/poster.png filter=lfs diff=lfs merge=lfs -text
 resources/tree.png filter=lfs diff=lfs merge=lfs -text
 resources/bibtex.txt filter=lfs diff=lfs merge=lfs -text
-resources/method_diagram.png filter=lfs diff=lfs merge=lfs -text
 resources/paper.png filter=lfs diff=lfs merge=lfs -text
-resources/teaser.png filter=lfs diff=lfs merge=lfs -text
 resources/img.png filter=lfs diff=lfs merge=lfs -text
-resources/poster_hq.png filter=lfs diff=lfs merge=lfs -text
-resources/poster_lq.png filter=lfs diff=lfs merge=lfs -text
-resources/Poster_NAPPN23_A0_portrait.pdf filter=lfs diff=lfs merge=lfs -text
-resources/Poster_NAPPN23_A0_portrait.pdf filter=lfs diff=lfs merge=lfs -text
+resources/poster.png filter=lfs diff=lfs merge=lfs -text
+resources/* filter=lfs diff=lfs merge=lfs -text
